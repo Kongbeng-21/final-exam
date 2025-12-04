@@ -12,7 +12,7 @@ class Customer(Person):
         self.address =address
         
     def place_order(self,item):
-        return "Laptop" and "Headphones"
+        return 
     
 class Driver(Person):
     def __init__(self,name,vehicle):
@@ -23,8 +23,9 @@ class Driver(Person):
     def deliver(self,order):
         print(f" {self.driver_name} is delivering {self.item} to {self.customer_name} using {self.vehicle}.")
         
+        
 class DeliveryOrder:
-    def __init__(self,customer,item,status="preparing"):
+    def __init__(self,name,customer,item,status="preparing"):
         self.customer = customer
         self.item = item
         self.status = status
@@ -44,4 +45,7 @@ ps = Person()
 ctm = Customer()
 drv = Driver()
 dlv_ord = DeliveryOrder()
-name = "ALICE"
+
+name = ["ALICE","Bob"]
+item =["Laptop","Headphones"]
+vehicle = "motorcycle"

@@ -1,7 +1,7 @@
 # Project title
 Delivery App
 # Project overview: a short summary explaining what this project is all about
-
+-This project receive a customer and rider name to show in order summary.Receive Item and show status when rider received it.Order summary show item name,customer name,status and driver name that receive from data.The status have 3 status prepare,delivering and delivered.
 # Features
 Class Person
 -show the name of driver and customer
