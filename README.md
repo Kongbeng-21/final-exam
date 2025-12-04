@@ -6,11 +6,11 @@ Delivery App
 Class Person
 -show the name of driver and customer
 Class Customer
--
+-assume that customer place the order that given.
 Class Driver
--
+-driver receive the order and prepare to deliver.
 Class DeliveryOrder
--
+-show the order summary that have item name,customer name,status and driver name that receive from data.
 # How to run
 -click run button ot type python3 exam.py
 # Project structure

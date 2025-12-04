@@ -40,12 +40,15 @@ class DeliveryOrder:
         print(f"Status: {self.status}")
         print(f"Driver: {self.name}")
 
-
-ps = Person()
-ctm = Customer()
-drv = Driver()
-dlv_ord = DeliveryOrder()
-
-name = ["ALICE","Bob"]
+name = ["Alice","Bob","David"]
+customer = []
 item =["Laptop","Headphones"]
 vehicle = "motorcycle"
+status = ['preparing','delivering','delivered']
+driver = []
+order = []
+ps = Person(name)
+ctm = Customer(name,item)
+drv = Driver(name,vehicle,order)
+dlv_ord = DeliveryOrder(name,customer,driver,item,status)
+
