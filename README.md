@@ -19,4 +19,5 @@ README.md (readme)
 
 Take a screenshot of your final output and put it in this README or in a separate pdf, png, or jpg file that goes with your code
 
-Is the project 100% correctly implemented or there are still some bugs; explain the bugs encountered
+# Is the project 100% correctly implemented or there are still some bugs; explain the bugs encountered
+-not 100% but i do my best

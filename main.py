@@ -33,7 +33,7 @@ class DeliveryOrder:
         self.status = status
         
     def assign_driver(self,driver):
-        pass
+        return driver 
     
     def summary(self):
         print(f"Order Summary: ")
@@ -50,7 +50,7 @@ status = ['preparing','delivering','delivered']
 driver = ["David"]
 order = []
 ps = Person(name)
-ctm = Customer(name,item)
+ctm = Customer(name,item,)
 drv = Driver(name,vehicle,order)
 dlv_ord = DeliveryOrder(name,customer,driver,item,status)
 
