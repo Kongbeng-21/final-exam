@@ -6,23 +6,25 @@ class Person:
         print (f"Hi, I'm {self.name}.")
         
 class Customer(Person):
-    def __init__(self,name,address):
+    def __init__(self,name,address,item):
         super().__init__(name)
         self.name = name
         self.address =address
+        self.item = item
         
     def place_order(self,item):
-        return 
+        return item
     
 class Driver(Person):
-    def __init__(self,name,vehicle):
+    def __init__(self,name,vehicle,order):
         super().__init__(name)
         self.name = name
         self.vehicle = vehicle
+        self.order = order
         
     def deliver(self,order):
         print(f" {self.driver_name} is delivering {self.item} to {self.customer_name} using {self.vehicle}.")
-        
+        return order
         
 class DeliveryOrder:
     def __init__(self,name,customer,item,status="preparing"):
@@ -40,12 +42,12 @@ class DeliveryOrder:
         print(f"Status: {self.status}")
         print(f"Driver: {self.name}")
 
-name = ["Alice","Bob","David"]
-customer = []
+name = ["Alice","Bob"]
+customer = ["Alice","Bob"]
 item =["Laptop","Headphones"]
 vehicle = "motorcycle"
 status = ['preparing','delivering','delivered']
-driver = []
+driver = ["David"]
 order = []
 ps = Person(name)
 ctm = Customer(name,item)
